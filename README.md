@@ -96,3 +96,52 @@
 > Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes.
 
 **[⬆ Back to Top](#table-of-contents)**
+
+13. ### Why do we use useRef?
+
+> The useRef Hook allows you to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can be used to access a DOM element directly
+
+**[⬆ Back to Top](#table-of-contents)**
+
+14. ### Why do we use useEffects?
+
+> By using this Hook, you tell React that your component needs to do something after rendering. React will remember the function you passed (we'll refer to it as our “effect”), and call it later after performing the DOM updates.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+15. ### What is Lifting State Up in React?
+
+>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+16. ### What are the different phases of the component lifecycle?
+
+>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+17. ### Explain lifecycle methods in react class component.
+
+>
+
+**[⬆ Back to Top](#table-of-contents)**
+
+18. ### What are the lifecycle methods of React?
+
+**Mounting -**
+Mounting means putting elements into the DOM.
+
+**Updating -**
+A component is updated whenever there is a change in the component's state or props.
+
+**Unmount -**
+The Unmount method is called when the component is about to be removed from the DOM.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+19. ### What are Higher-Order components (HOC)?
+
+> A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+
+**[⬆ Back to Top](#table-of-contents)**
