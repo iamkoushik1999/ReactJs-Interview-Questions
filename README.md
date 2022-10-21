@@ -34,9 +34,11 @@
 | 23. | [What are the components of Redux?](#what-are-the-components-of-redux)                                                                               |
 | 24. | [What is an action in Redux?](#what-is-an-action-in-redux)                                                                                           |
 | 25. | [What is the difference between mapStateToProps() and mapDispatchToProps()?](#what-is-the-difference-between-mapstatetoprops-and-mapdispatchtoprops) |
-| 26. | []()                                                                                                                                                 |
-| 27. | []()                                                                                                                                                 |
-| 28. | []()                                                                                                                                                 |
+| 26. | [Difference between state and props.](#difference-between-state-and-props)                                                                           |
+| 27. | [Difference between class components and function components?](#difference-between-class-components-and-function-components)                         |
+| 28. | [Difference between controlled components and uncontrolled components?](#difference-between-controlled-components-and-uncontrolled-components)       |
+| 29. | [What is the difference between createElement and cloneElement?](#what-is-the-difference-between-createelement-and-cloneelement)                     |
+| 30. | []()                                                                                                                                                 |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -197,3 +199,62 @@ The Unmount method is called when the component is about to be removed from the 
 25. ### What is the difference between mapStateToProps() and mapDispatchToProps()?
 
 **[⬆ Back to Top](#table-of-contents)**
+
+26. ### Difference between state and props.
+
+| PROPS                                                   | STATE                                                                           |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| The Data is passed from one component to another.       | The Data is passed within the component only.                                   |
+| It is Immutable (cannot be modified).                   | It is Mutable ( can be modified).                                               |
+| Props can be used with state and functional components. | State can be used only with the state components/class component (Before 16.0). |
+| Props are read-only.                                    | State is both read and write.                                                   |
+
+**[⬆ Back to Top](#table-of-contents)**
+
+27. ### Difference between class components and function components?
+
+| Functional Components                                                                                                                      | Class Components                                                                                                                                       |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| A functional component is just a plain JavaScript pure function that accepts props as an argument and returns a React element(JSX).        | A class component requires you to extend from React. Component and create a render function which returns a React element.                             |
+| There is no render method used in functional components.                                                                                   | It must have the render() method returning JSX (which is syntactically similar to HTML)                                                                |
+| Functional components run from top to bottom and once the function is returned it can't be kept alive.                                     | Class component is instantiated and different life cycle method is kept alive and being run and invoked depending on the phase of the class component. |
+| Also known as Stateless components as they simply accept data and display them in some form, they are mainly responsible for rendering UI. | Also known as Stateful components because they implement logic and state.                                                                              |
+| React lifecycle methods (for an example, componentDidMount) cannot be used in functional components.                                       | React lifecycle methods can be used inside class components (for example, componentDidMount).                                                          |
+| Constructors are not used.                                                                                                                 | Constructors are used as it needs to store state.                                                                                                      |
+| Hooks can be easily used in functional components to make them Stateful.                                                                   | It requires different syntax inside a class component to implement hooks.                                                                              |
+
+```javascript
+Functional Components ->
+example:
+const [name,SetName]= React.useState(‘ ‘)
+```
+
+```javascript
+Class Components ->
+example:
+constructor(props) {
+   super(props);
+   this.state = {name: ‘ ‘}
+}
+```
+
+28. ### Difference between controlled components and uncontrolled components?
+
+| Controlled Components                                                             | Uncontrolled Components                                                     |
+| --------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| The component is under control of the component’s state.                          | Components are under the control of DOM.                                    |
+| These components are predictable as are controlled by the state of the component. | Are Uncontrolled because during the life cycle methods the data may be lost |
+| Internal state is not maintained                                                  | Internal state is maintained                                                |
+| It accepts the current value as props                                             | We access the values using refs                                             |
+| Does not maintain its internal state.                                             | Maintains its internal state.                                               |
+| Controlled by the parent component.                                               | Controlled by the DOM itself.                                               |
+| Have better control on the form data and values                                   | Has very limited control over form values and data                          |
+
+29. ### What is the difference between createElement and cloneElement?
+
+| createElement                                                                                                  | cloneElement                                                                |
+| -------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| createElement is the code that JSX gets compiled or converted into and is used by reacting to create elements. | cloneElement is used for cloning elements and passing them to new props.    |
+| This method is used to describe how the User Interface looks.                                                  | This method is used to manipulate the elements.                             |
+| createElement requires a type, props, and children as arguments.                                               | cloneElement requires elements, props, and children as arguments.           |
+| It creates and returns a new element with the type as given in the arguments.                                  | It clones and returns a new element with the properties of a given element. |
