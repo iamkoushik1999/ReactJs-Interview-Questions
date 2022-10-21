@@ -7,28 +7,36 @@
 
 ### Table of Contents
 
-| No. | Questions                                                                                                              |
-| --- | ---------------------------------------------------------------------------------------------------------------------- |
-| 1.  | [Why do we use React?](#why-do-we-use-react)                                                                           |
-| 2.  | [What is JSX?](#what-is-jsx)                                                                                           |
-| 3.  | [What is a component in react?](#what-is-a-component-in-react)                                                         |
-| 4.  | [What is the virtual DOM?](#what-is-the-virtual-dom)                                                                   |
-| 5.  | [What is the use of render() in React?](#what-is-the-use-of-render-in-react)                                           |
-| 6.  | [How is routing done in react components?](#how-is-routing-done-in-react-components)                                   |
-| 7.  | [How do you update the state of a component?](#how-do-you-update-the-state-of-a-component)                             |
-| 8.  | [What are Axios? Why is it used?](#what-are-axios-why-is-it-used)                                                      |
-| 9.  | [Why are props used?](#why-are-props-used)                                                                             |
-| 10. | [What do you understand by refs in React?](#what-do-you-understand-by-refs-in-react)                                   |
-| 11. | [How is React Router different from Conventional Routing?](#how-is-react-router-different-from-conventional-routing)   |
-| 12. | [Why do we use Hooks?](#why-do-we-use-hooks)                                                                           |
-| 13. | [Why do we use useRef?](#why-do-we-use-useref)                                                                         |
-| 14. | [Why do we use useEffects?](#why-do-we-use-useeffects)                                                                 |
-| 15. | [What is Lifting State Up in React?](#what-is-lifting-state-up-in-react)                                               |
-| 16. | [What are the different phases of the component lifecycle?](#what-are-the-different-phases-of-the-component-lifecycle) |
-| 17. | [Explain lifecycle methods in react class component.](#explain-lifecycle-methods-in-react-class-component)             |
-| 18. | [What are the lifecycle methods of React?](#what-are-the-lifecycle-methods-of-react)                                   |
-| 19. | [What are Higher-Order components (HOC)?](#what-are-higher-order-components-hoc)                                       |
-| 20. | []()                                                                                                                   |
+| No. | Questions                                                                                                                                            |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1.  | [Why do we use React?](#why-do-we-use-react)                                                                                                         |
+| 2.  | [What is JSX?](#what-is-jsx)                                                                                                                         |
+| 3.  | [What is a component in react?](#what-is-a-component-in-react)                                                                                       |
+| 4.  | [What is the virtual DOM?](#what-is-the-virtual-dom)                                                                                                 |
+| 5.  | [What is the use of render() in React?](#what-is-the-use-of-render-in-react)                                                                         |
+| 6.  | [How is routing done in react components?](#how-is-routing-done-in-react-components)                                                                 |
+| 7.  | [How do you update the state of a component?](#how-do-you-update-the-state-of-a-component)                                                           |
+| 8.  | [What are Axios? Why is it used?](#what-are-axios-why-is-it-used)                                                                                    |
+| 9.  | [Why are props used?](#why-are-props-used)                                                                                                           |
+| 10. | [What do you understand by refs in React?](#what-do-you-understand-by-refs-in-react)                                                                 |
+| 11. | [How is React Router different from Conventional Routing?](#how-is-react-router-different-from-conventional-routing)                                 |
+| 12. | [Why do we use Hooks?](#why-do-we-use-hooks)                                                                                                         |
+| 13. | [Why do we use useRef?](#why-do-we-use-useref)                                                                                                       |
+| 14. | [Why do we use useEffects?](#why-do-we-use-useeffects)                                                                                               |
+| 15. | [What is Lifting State Up in React?](#what-is-lifting-state-up-in-react)                                                                             |
+| 16. | [What are the different phases of the component lifecycle?](#what-are-the-different-phases-of-the-component-lifecycle)                               |
+| 17. | [Explain lifecycle methods in react class component.](#explain-lifecycle-methods-in-react-class-component)                                           |
+| 18. | [What are the lifecycle methods of React?](#what-are-the-lifecycle-methods-of-react)                                                                 |
+| 19. | [What are Higher-Order components (HOC)?](#what-are-higher-order-components-hoc)                                                                     |
+| 20. | [How to create a props proxy for the HOC component?](#how-to-create-a-props-proxy-for-the-hoc-component)                                             |
+| 21. | [What is the lifecycle methods order in mounting?](#what-is-the-lifecycle-methods-order-in-mounting)                                                 |
+| 22. | [What is Redux?](#what-is-redux)                                                                                                                     |
+| 23. | [What are the components of Redux?](#what-are-the-components-of-redux)                                                                               |
+| 24. | [What is an action in Redux?](#what-is-an-action-in-redux)                                                                                           |
+| 25. | [What is the difference between mapStateToProps() and mapDispatchToProps()?](#what-is-the-difference-between-mapstatetoprops-and-mapdispatchtoprops) |
+| 26. | []()                                                                                                                                                 |
+| 27. | []()                                                                                                                                                 |
+| 28. | []()                                                                                                                                                 |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -163,5 +171,29 @@ The Unmount method is called when the component is about to be removed from the 
 19. ### What are Higher-Order components (HOC)?
 
 > A higher-order component (HOC) is an advanced technique in React for reusing component logic.
+
+**[⬆ Back to Top](#table-of-contents)**
+
+20. ### How to create a props proxy for the HOC component?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+21. ### What is the lifecycle methods order in mounting?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+22. ### What is Redux?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+23. ### What are the components of Redux?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+24. ### What is an action in Redux?
+
+**[⬆ Back to Top](#table-of-contents)**
+
+25. ### What is the difference between mapStateToProps() and mapDispatchToProps()?
 
 **[⬆ Back to Top](#table-of-contents)**
