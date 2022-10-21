@@ -238,6 +238,8 @@ constructor(props) {
 }
 ```
 
+**[⬆ Back to Top](#table-of-contents)**
+
 28. ### Difference between controlled components and uncontrolled components?
 
 | Controlled Components                                                             | Uncontrolled Components                                                     |
@@ -250,6 +252,8 @@ constructor(props) {
 | Controlled by the parent component.                                               | Controlled by the DOM itself.                                               |
 | Have better control on the form data and values                                   | Has very limited control over form values and data                          |
 
+**[⬆ Back to Top](#table-of-contents)**
+
 29. ### What is the difference between createElement and cloneElement?
 
 | createElement                                                                                                  | cloneElement                                                                |
@@ -258,3 +262,5 @@ constructor(props) {
 | This method is used to describe how the User Interface looks.                                                  | This method is used to manipulate the elements.                             |
 | createElement requires a type, props, and children as arguments.                                               | cloneElement requires elements, props, and children as arguments.           |
 | It creates and returns a new element with the type as given in the arguments.                                  | It clones and returns a new element with the properties of a given element. |
+
+**[⬆ Back to Top](#table-of-contents)**
