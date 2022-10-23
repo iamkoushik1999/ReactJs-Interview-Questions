@@ -38,7 +38,8 @@
 | 27. | [Difference between class components and function components?](#difference-between-class-components-and-function-components)                         |
 | 28. | [Difference between controlled components and uncontrolled components?](#difference-between-controlled-components-and-uncontrolled-components)       |
 | 29. | [What is the difference between createElement and cloneElement?](#what-is-the-difference-between-createelement-and-cloneelement)                     |
-| 30. | []()                                                                                                                                                 |
+| 30. | [What is the difference between Axios and Fetch](#what-is-the-difference-between-axios-and-fetch)                                                    |
+| 31. | []()                                                                                                                                                 |
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -264,3 +265,14 @@ constructor(props) {
 | It creates and returns a new element with the type as given in the arguments.                                  | It clones and returns a new element with the properties of a given element. |
 
 **[⬆ Back to Top](#table-of-contents)**
+
+30. ### What is the difference between Axios and Fetch?
+
+| Axios                                                                  | Fetch                                                                                                                    |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| Axios is astand-alone third party package that can be easily installed | Fetch is built into most modern browsers; no installation is required as such                                            |
+| Axios performs automatic transforms of JSON data                       | Fetch is a two-step process when handling Json data-first, to make the actual requst; second, to call the .json() method |
+| Asios requst is ok when status is 200 and statusText is 'OK'.          | Fetch requst is ok when response object contains the ok property                                                         |
+| Axios allows canceling requst and request timeout.                     | Fetch doesnot allow cancelling requst and requst timeout                                                                 |
+| Fetch has built-in support fordownload progress                        | Fetch doesnot support upload progress                                                                                    |
+| Axios has a wide browser support                                       | Fetch only supports limited browser                                                                                      |
