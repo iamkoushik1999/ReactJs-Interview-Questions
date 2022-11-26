@@ -276,3 +276,5 @@ constructor(props) {
 | Axios allows canceling requst and request timeout.                     | Fetch doesnot allow cancelling requst and requst timeout                                                                 |
 | Fetch has built-in support fordownload progress                        | Fetch doesnot support upload progress                                                                                    |
 | Axios has a wide browser support                                       | Fetch only supports limited browser                                                                                      |
+
+**[⬆ Back to Top](#table-of-contents)**
